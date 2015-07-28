@@ -10,6 +10,7 @@ import com.intellij.openapi.wm.WindowManager;
 import org.jdom.Element;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import sun.jvm.hotspot.ui.EditorFactory;
 
 /**
  * Created by lily on 7/28/15.
@@ -40,11 +41,14 @@ public class OffsetViewer implements ApplicationComponent,
     @Override
     public void initComponent() {
         LOG.debug("initComponent");
+        EditorFactory.
+        LOG.debug("done");
     }
 
     @Override
     public void disposeComponent() {
-
+        LOG.debug("disposeComponent");
+        LOG.debug("done");
     }
 
     @NotNull
