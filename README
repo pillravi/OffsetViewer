@@ -1,0 +1,2 @@
+This plugin shows the offset in the status bar. This is in addition to the
+default which just shows the logical position (row:column).

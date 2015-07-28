@@ -1,0 +1,8 @@
+# .gitignore for the ASTDiffApplier project
+
+out
+.DS_Store
+*.log
+
+.idea/dictionaries
+.idea/workspace.xml
