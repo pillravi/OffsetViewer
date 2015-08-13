@@ -25,12 +25,12 @@ public class MyCaretListener implements CaretListener {
 
     @Override
     public void caretAdded(CaretEvent e) {
-
+        System.out.println("caretAdded");
     }
 
     @Override
     public void caretRemoved(CaretEvent e) {
-
+        System.out.println("caretRemoved");
     }
 
     private void showMessage(@Nullable String msg) {
@@ -40,7 +40,7 @@ public class MyCaretListener implements CaretListener {
             StatusBar bar = WindowManager.getInstance().getStatusBar(project);
             if (bar != null) {
                 if (msg == null || msg.length() == 0) {
-                    bar.setInfo("");
+                    bar.setInfo("msg was null");
                 }
                 else {
                     bar.setInfo("Offset: " + msg);
